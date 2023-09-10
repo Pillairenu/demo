@@ -17,19 +17,22 @@
         [
           "name"=>"Do Androids Dream of Electric Sheep",
           "author"=>"Philip K. Dick",
+          "releaseYear"=>"1968",
           "purchaseUrl"=>"http://example.com"
         
         
         ],
         [
-          "name"=>"The Langoliers",
-          "author"=>"Stephen King",
-          "purchaseUrl"=>"http://example.com"
-        
-        ],
-        [
-          "name"=>"Hail Mary",
+          "name"=>"The Martian",
           "author"=>"Andy Weir",
+          "releaseYear"=>"2011",
+          "purchaseUrl"=>"http://example.com"
+        
+        ],
+        [
+          "name"=>"Project Hail Mary",
+          "author"=>"Andy Weir",
+          "releaseYear"=>"2021",
           "purchaseUrl"=>"http://example.com"
           
         ],
@@ -41,14 +44,17 @@
 
       <ul>
           <?php foreach ($books as $book):?>
+            <?php if($book['author'] === "Andy Weir") : ?>
             
           <li> 
             
             <a href="<?= $book['purchaseUrl']; ?>">
               
-              <?= $book['name'];?> 
+              <?= $book['name'];?> (<?= $book['releaseYear'];?>)
             </a>
           </li>
+
+          <?php endif; ?>
 
        
           <?php endforeach; ?>
