@@ -15,19 +15,25 @@
     </style>
 </head>
 <body>
-    <h1>You have read "Dark Matter."
-        
+
         <?php 
 
-          //$greeting="Hello";  
+          $name="Dark Matter";
+          $read=true;
+
+          if ($read)
+          {
+            $message="You have read $name";
+          }
+          else
+          {
+            $message="You have NOT read $name";
+          }
         
-          //echo $greeting." "."Everybody!";
-          //echo "$greeting Everybody!";
-
-           
-
+        
         ?>
-
+    <h1>   
+        <?php echo $message;?>
 
     </h1>
 </body>
