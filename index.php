@@ -16,26 +16,12 @@
 </head>
 <body>
 
-        <?php 
+       <h1>Recommended Books</h1>
 
-          $name="Dark Matter";
-          $read=true;
-
-          if ($read)
-          {
-            $message="You have read $name";
-          }
-          else
-          {
-            $message="You have NOT read $name";
-          }
-        
-        
-        ?>
-    <h1>   
-        
-        <?= $message;?>
-
-    </h1>
+       <ul>
+        <li> Do Androids Dream of Electric Sheep </li>
+        <li> The Langoliers</li>
+        <li> Hail Mary</li>
+       </ul>
 </body>
 </html>
