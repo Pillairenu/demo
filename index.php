@@ -8,8 +8,10 @@
     <h1>
         
         <?php 
+
+          $greeting="Hello";  
         
-          echo "Hello,"."Universe";
+          echo $greeting." "."Everybody!";
         ?>
 
 
