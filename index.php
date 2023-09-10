@@ -56,11 +56,11 @@
         return $filteredBooks;
 
        }
-
+       $filteredBooks=filterByAuthor($books,'Philip K. Dick');
 
        ?>
       <ul>
-          <?php foreach (filterByAuthor($books,'Philip K. Dick') as $book):?>
+          <?php foreach ( $filteredBooks as $book):?>
            
           <li> 
             
