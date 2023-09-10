@@ -17,7 +17,7 @@
         [
           "name"=>"Do Androids Dream of Electric Sheep",
           "author"=>"Philip K. Dick",
-          "releaseYear"=>"1968",
+          "releaseYear"=>1968,
           "purchaseUrl"=>"http://example.com"
         
         
@@ -25,14 +25,14 @@
         [
           "name"=>"The Martian",
           "author"=>"Andy Weir",
-          "releaseYear"=>"2011",
+          "releaseYear"=>2011,
           "purchaseUrl"=>"http://example.com"
         
         ],
         [
           "name"=>"Project Hail Mary",
           "author"=>"Andy Weir",
-          "releaseYear"=>"2021",
+          "releaseYear"=>2021,
           "purchaseUrl"=>"http://example.com"
           
         ],
@@ -41,22 +41,25 @@
        
   
 
-       function filterByAuthor($books,$author)
+       function filter($items,$key,$value)
        {
 
-        $filteredBooks = [];
+        $filteredItems = [];
 
-        foreach ($books as $book)
+        foreach ($items as $item)
         {
-          if($book['author'] === $author)
+          if($item[$key] === $value)
           {
-            $filteredBooks[]= $book;
+            $filteredItems[]= $item;
           }
         }
-        return $filteredBooks;
+        return $filteredItems;
 
        }
-       $filteredBooks=filterByAuthor($books,'Philip K. Dick');
+
+
+
+       $filteredBooks=filter($books,'releaseYear',1968);
 
        ?>
       <ul>
