@@ -41,14 +41,14 @@
        
   
 
-       function filterByAuthor($books)
+       function filterByAuthor($books,$author)
        {
 
         $filteredBooks = [];
 
         foreach ($books as $book)
         {
-          if($book['author'] === "Andy Weir")
+          if($book['author'] === $author)
           {
             $filteredBooks[]= $book;
           }
@@ -60,7 +60,7 @@
 
        ?>
       <ul>
-          <?php foreach (filterByAuthor($books) as $book):?>
+          <?php foreach (filterByAuthor($books,'Philip K. Dick') as $book):?>
            
           <li> 
             
