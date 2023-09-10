@@ -14,16 +14,31 @@
        
        $books=[
 
-        "Do Androids Dream of Electric Sheep",
-        "The Langoliers",
-        "Hail Mary"
+        [
+          "name"=>"Do Androids Dream of Electric Sheep",
+          "author"=>"Philip K. Dick",
+          "purchaseurl"=>"http://example.com"
+        
+        
+        ],
+        [
+          "name"=>"The Langoliers",
+          "author"=>"Stephen King",
+          "purchaseUrl"=>"http://example.com"
+        
+        ],
+        [
+          "name"=>"Hail Mary",
+          "author"=>"Andy Weir" ,
+          "purchaseurl"=>"http://example.com"
+          
+        ],
 
        ];
        
        
-       
        ?>
 
-      <p> <?= $books[1];?> </p>
+      
 </body>
 </html>
