@@ -1,16 +1,5 @@
+<?php require('partials/head.php');?>
 
-<!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
-<head>
-    <meta charset="UTF-8">
-    <title>demo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body class="h-full">
-
-
-<div class="min-h-full">
 <?php require('partials/nav.php');?>
 
   <header class="bg-white shadow">
@@ -25,7 +14,4 @@
       <p> Contact us now!</p>
     </div>
   </main>
-</div>
-
-</body>
-</html>
+  <?php require('partials/footer.php');?>
