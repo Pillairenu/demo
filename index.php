@@ -1,12 +1,17 @@
 <?php
 $heading='Home';
 
-echo "<pre>";
+function dd($value)
+{
 
- var_dump($_SERVER);
- 
-echo "</pre>";
-die();
+      echo "<pre>";
 
+      var_dump($value);
+      
+      echo "</pre>";
+      die();
+}
+
+dd($heading);
       require "views/index.view.php";
        ?>
