@@ -59,9 +59,9 @@
 
 
 
-       $filteredBooks=filter($books,function($book)
+       $filteredBooks=array_filter($books,function($book)
        {
-              return $book['releaseYear'] < 2000;
+              return $book['author'] === 'Andy Weir';
        }
       
       
@@ -75,7 +75,7 @@
             
             <a href="<?= $book['purchaseUrl']; ?>">
               
-              <?= $book['name'];?> (<?= $book['releaseYear'];?>)
+              <?= $book['name'];?> (<?= $book['releaseYear'];?> -By <?= $book['author'];?>)
             </a>
           </li>
 
