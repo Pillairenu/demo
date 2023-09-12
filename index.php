@@ -1,9 +1,18 @@
 <?php
+require 'functions.php';
 
-require "functions.php";
+$uri =parse_url($_SERVER['REQUEST_URI'])['path'];
 
-$heading='Home';
-
-
-require "views/index.view.php";
+if($uri === '/')
+{
+    require 'controllers/index.php';
+}
+else if($uri === '/about')
+{
+    require 'controllers/about.php';
+}
+else if ($uri === '/contact')
+{
+    require 'controllers/contact.php';
+}
 ?>
