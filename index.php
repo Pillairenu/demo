@@ -12,6 +12,7 @@ function dd($value)
       die();
 }
 
-dd($heading);
+
+
       require "views/index.view.php";
        ?>
